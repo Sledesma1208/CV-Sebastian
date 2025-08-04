@@ -1,0 +1,51 @@
+.skill-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.bg-circle {
+  stroke: #ccc;
+  fill: transparent;
+}
+
+.progress-circle {
+  stroke: #1f2bce96;
+  fill: transparent;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.percentage-text {
+  font-size: 12px;
+  fill: #ffffff;
+  opacity: 0;
+  transform: scale(0.8);
+  transform-origin: 50% 50%;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.percentage-text.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tech-name {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+ 
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

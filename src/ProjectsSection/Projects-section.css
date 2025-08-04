@@ -1,0 +1,91 @@
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+} 
+
+.ProjectsSection{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.Project1,
+.Project2,
+.Project3{
+  width: 330px;
+  padding: 20px;
+  background-color: #1a2238;
+  color: #A4AAB3;
+  border-radius: 12px;
+  border: 2px solid #1E3A5F;
+  box-shadow: 0 4px 12px rgba(8, 8, 8, 0.5);
+  transition: transform 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.Project1:hover,
+.Project2:hover,
+.Project3:hover{
+  transform: scale(1.03);
+}
+
+.Project1 h1,
+.Project2 h1,
+.Project3 h1{
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.Project1 p,
+.Project2 p,
+.Project3 p{
+    margin-top: 10px;
+  text-align: center;
+}
+
+@keyframes alertAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+}
+
+.SuccessAlert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffff00;
+  color: rgb(53, 0, 0);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  animation: alertAppear 7.5s ease-in-out forwards;
+}

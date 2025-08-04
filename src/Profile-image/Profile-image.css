@@ -1,0 +1,15 @@
+
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  animation: glowingShadow 3s ease-in-out infinite;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
