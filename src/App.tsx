@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState } from "react";
-import Example from "./Image-modal/Image-modal";
 import ProfileImage from "./Profile-image/Profile-image";
+import AboutMe from "./About-me/About-me";
+import Navbar from "./Navbar/Navbar";
 import InfoSection from "./Info-section/Info-section";
 import Projectsection from "./ProjectsSection/Projects-section";
 import SkillCircle from "./Skills/SkillCircle";
@@ -11,50 +12,31 @@ function App() {
 
   return (
     <>
-      <div className="contenedor-fondo">
-        <div className="fondo-imagen"></div>
 
-        <div className="contenido-hdv">
-          <Example open={modalOpen} onClose={() => setModalOpen(false)} />
-          <div className="PresentationCard">
-            <div className="Header">
-              <div
-                onClick={() => setModalOpen(true)}
-                style={{ cursor: "pointer" }}
-              >
-                <ProfileImage src="/HdV-Imagen.jpeg" alt="ProfileImage" />
-              </div>
-              <div className="Name">
+    <Navbar />
+
+        <div className="PresentationCard">
+          <div className="image">
+            <div>
+              <ProfileImage src="/HdV-Imagen.jpeg" alt="ProfileImage" />
+            </div>
+          </div>
+          <div className="Name">
                 <h1>
                   <span>Sebastian</span> Ledesma Montoya
                 </h1>
                 <h2>Desarrollador de software Junior</h2>
-                <p>
-                  <span>Cel:</span> +57 3016358391
-                </p>
-                <p>
-                  <span>Email:</span> Sebastianledesmamontoya12@gmail.com
-                </p>
-              </div>
-            </div>
           </div>
+        </div>
 
-          <div className="AboutMe">
-            <h1>Acerca de mí</h1>
-            <hr />
-            <p className="mt-3">
-              Analista y desarrollador de software en formación, con 18 años y
-              gran pasión por el aprendizaje continuo. Destaco por ser metódico,
-              proactivo y responsable, con una sólida base técnica para asumir
-              desafíos en desarrollo. Comprometido con aportar valor real desde
-              el primer día y con un fuerte enfoque en el crecimiento
-              profesional constante.
-            </p>
-          </div>
+        <AboutMe/>
 
-          <InfoSection />
 
-          <div className="Perfiltecnico">
+        
+
+        <InfoSection />
+
+      <div className="Perfiltecnico">
             <h1>Perfil Técnico</h1>
             <hr />
             <p>
@@ -72,8 +54,11 @@ function App() {
               sobre todo, adaptado a las necesidades reales del proyecto.
             </p>
             <hr className="mt-3" />
-          </div>
+      </div>
 
+          {/* <br />
+
+          <br />
 
           <div className="skills-wrapper">
             <SkillCircle name="React" percentage={90} />
@@ -82,20 +67,17 @@ function App() {
             <SkillCircle name="Node.js" percentage={70} />
           </div>
 
-
           <div className="Title mt-3 mb-3">
             <h1>Proyectos</h1>
           </div>
 
           <Projectsection />
 
-          <br />
-        </div>
+          <br /> */}
 
-        <footer className="Footer">
-          <p>Developed in React by Sebastian</p>
-        </footer>
-      </div>
+      <footer className="Footer">
+        <p>Developed in React by Sebastian</p>
+      </footer>
     </>
   );
 }

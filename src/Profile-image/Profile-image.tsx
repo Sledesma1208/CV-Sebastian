@@ -7,7 +7,12 @@ type ProfileImageProps = {
 };
 
 const ProfileImage: React.FC<ProfileImageProps> = ({ src, alt = 'Profile' }) => {
-  return <img className="profile-image" src={src} alt={alt} />;
+  return (
+    <div className="polaroid">
+      <img className="polaroid-image" src={src} alt={alt} />
+      <br />
+    </div>
+  );
 };
 
 export default ProfileImage;
