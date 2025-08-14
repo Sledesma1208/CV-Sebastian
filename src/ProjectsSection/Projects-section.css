@@ -100,3 +100,51 @@
   padding-right: 10px;
   margin-right: 10px;
 }
+
+
+
+
+
+
+
+.ProjectsAlertBox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #505050;
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+  font-family: "Outfit", sans-serif;
+  max-width: 300px;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
