@@ -11,14 +11,14 @@
 
 .PresentationCard {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
   width: 100%;
-  height: 790px;
+  height: 800px;
 }
 
 .image {
-  background-color: #202020;
+  
+  background-color: #1a1a1a;
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
 }
 
 .Name {
-  background-color: #1a1a1a;
+  background-color: #202020;
   padding: 50px;
   text-align: center;
   display: flex;
@@ -65,75 +65,76 @@
 
 /* ---------------------------- Info Section ----------------------------- */
 
-.AboutMe {
-  width: 1000px;
-  height: 750px;
-  margin: 5px auto;
-  padding: 20px;
-  border-radius: 12px;
+td {
+        font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
-
-
-
-
-
-
-.Perfiltecnico{
-  width: 1100px;
-  max-width: 100%;
-  /* padding: 20px; */
-  margin: 0px auto 0px auto;
-  color: #A4AAB3;
-  border-radius: 15px;
-
-    animation-name: disappear-up;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  transition: transform 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
-
-
-  /* Scroll-driven animation */
-  animation-timeline: view();
-  animation-range: exit 0% exit 100%;
+th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  
 }
 
-.Perfiltecnico h1,
-.Title{
-  text-align: center;
-  font-weight: bold;
+a {
   color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-
-
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
-.Perfiltecnico p{
-  margin-top: 10px;
+a::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #a3a3a3;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-out;
+}
+
+a:hover {
+  color: #a3a3a3;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+table {
+  width: 1000px;
+  color: #ffffff;
   text-align: center;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 16px;
+  margin-top: 50px;
 }
 
-.Perfiltecnico hr{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-
-
+.FooterContact {
+  width: 100%;
+  height: 260px;
+display: flex;
+  flex-direction: column; /* si quieres los elementos uno debajo del otro */
+  align-items: center;    /* centra horizontal */
+  justify-content: center;
 }
 
-.gitbutton{
-  margin-right: auto;
+.FooterSection {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
 }
 
-
-.contenedor-1 {
-  background-color: #0A0F1F !important;
+.FooterSection h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
 }

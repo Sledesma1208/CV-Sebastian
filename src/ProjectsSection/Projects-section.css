@@ -1,79 +1,71 @@
-@keyframes appear{
-  from{
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-} 
-
-.ProjectsSection{
-    display: flex;
-  flex-wrap: wrap;
+.ProjectsSection {
+  display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  height: 400px;
+  background: linear-gradient(to top, 
+  #000 0%,
+  #818181 60%, 
+  #c7c7c7 100%
+  );
 }
 
 .Project1,
 .Project2,
-.Project3{
-  width: 330px;
-  padding: 20px;
-  background-color: #1a2238;
-  color: #A4AAB3;
-  border-radius: 12px;
-  border: 2px solid #1E3A5F;
-  box-shadow: 0 4px 12px rgba(8, 8, 8, 0.5);
-  transition: transform 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
-    animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+.Project3 {
+  width: 250px;
+  padding: 15px;
+  background: linear-gradient(135deg, #5e5e5e, #6d6d6d);
+  color: #000;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+  transition: transform 0.6s ease, background-color 0.6s;
 }
 
 .Project1:hover,
 .Project2:hover,
-.Project3:hover{
-  transform: scale(1.03);
+.Project3:hover {
+  transform: translateY(-8px);
 }
 
 .Project1 h1,
 .Project2 h1,
-.Project3 h1{
-  text-align: center;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+.Project3 h1 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: start;
+  color: #000;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .Project1 p,
 .Project2 p,
-.Project3 p{
-    margin-top: 10px;
-  text-align: center;
+.Project3 p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+  text-align: start;
+  color: #000;
+  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
-@keyframes alertAppear {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.95);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  90% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-10px) scale(0.95);
-  }
+.Project1 a,
+.Project2 a,
+.Project3 a {
+  color: #a7a7a7;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0s ease;
+}
+
+.Project1 a:hover,
+.Project2 a:hover,
+.Project3 a:hover {
+  color: #000000;
 }
 
 .SuccessAlert {
@@ -81,11 +73,30 @@
   top: 20px;
   right: 20px;
   background-color: #505050;
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: bold;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   animation: alertAppear 7.5s ease-in-out forwards;
+}
+
+.ProjectsSection span {
+  color: #a7a7a7;
+  font-size: 0.7rem;
+}
+
+.ProjectsTitle h1 {
+  font-size: 3.5rem;
+  color: #000;
+  font-family: "Road Rage", sans-serif;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.ProjectsTitle {
+  border-right: 2px solid #000000;
+  padding-right: 10px;
+  margin-right: 10px;
 }

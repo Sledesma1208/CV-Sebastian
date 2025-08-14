@@ -1,0 +1,108 @@
+.SkillsSection1 {
+  background: linear-gradient(
+  to bottom,
+  #424242 0%,
+  #5a5a5a 50%,
+  #929292 100%
+);
+  padding: 40px;
+}
+
+.SkillsSection2 {
+  background: linear-gradient(
+  to bottom,
+  #929292 0%,
+  #b4b4b4 50%,
+  #c7c7c7 100% 
+);
+  padding: 40px;
+  height: 280px;
+}
+
+.SkillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.TitleColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.SkillsSection1 h1, 
+.SkillsSection2 h1{
+  color: #000000;
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 3px solid #000000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.SkillsSection1 h2, 
+.SkillsSection2 h2{
+  color: #000000;
+  font-size: 2.5rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+}
+
+.TechColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.TechColumn2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.TechColumn3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.IconsGrid1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.IconItem {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.IconItem i {
+  color: #505050;
+  font-size: 2.2rem;
+}
+
+.IconItem span {
+  color: #000000;
+  margin-top: 8px;
+  font-size: 1rem;
+  text-align: center;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.devicon {
+  transition: transform 0.4s, filter 0.2s;
+}
+.devicon:hover {
+  transform: scale(1.1);
+  color:#000000
+}   

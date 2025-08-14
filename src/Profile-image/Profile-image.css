@@ -1,7 +1,7 @@
 .polaroid {
   width: 400px;
   background-color: white;
-  padding: 10px 10px 25px 10px; /* espacio más grande abajo */
+  padding: 10px 10px 70px 10px;
   box-shadow: 5px 10px 50px #000000;
   transform: rotate(8deg);
   transition: transform 0.3s ease;

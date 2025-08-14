@@ -1,0 +1,63 @@
+.Perfiltecnico {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #2a2a2a 50%,
+    #424242 100%
+  );
+  padding: 60px 20px;
+}
+
+.InfoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.InfoSection.text-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 2s ease, transform 0.8s ease;
+}
+
+.InfoSection.hidden {
+  transition: none !important;
+}
+
+.InfoSection h2 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+}
+
+.InfoSection p {
+  max-width: 800px;
+  font-size: 1.3rem;
+  color: #9b9b9b;
+  letter-spacing: 0.02em;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+.gif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  padding: 20px;
+}
+
+.DynamicGif {
+  width: 400px;
+}
+
