@@ -41,7 +41,7 @@ export default function AboutMe() {
     >
       <h1>¿Quien soy?</h1>
       <p className="mt-3">
-        Hola, Soy Sebastian, Analista y desarrollador de software de 19 años, 
+        Hola, Soy Sebastian, Analista y desarrollador de software, 
         apasionado por la tecnología y el aprendizaje continuo. 
         Me considero una persona metódica, proactiva y responsable, 
         con una sólida base técnica que me permite enfrentar desafíos en el desarrollo de software. 

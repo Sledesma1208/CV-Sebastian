@@ -1,14 +1,18 @@
+.ProjectsContainer{
+  height: 400px;
+  padding: 20px;
+  background: linear-gradient(to top, 
+  #000 0%,
+  #141414 40%, 
+  #838383 100%
+  );
+}
+
 .ProjectsSection {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  height: 400px;
-  background: linear-gradient(to top, 
-  #000 0%,
-  #818181 60%, 
-  #c7c7c7 100%
-  );
 }
 
 .Project1,
@@ -16,8 +20,7 @@
 .Project3 {
   width: 250px;
   padding: 15px;
-  background: linear-gradient(135deg, #5e5e5e, #6d6d6d);
-  color: #000;
+  background: linear-gradient(135deg, #1b1b1b, #616161);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgb(0, 0, 0);
   transition: transform 0.6s ease, background-color 0.6s;
@@ -36,7 +39,7 @@
   font-weight: 400;
   font-style: normal;
   text-align: start;
-  color: #000;
+  color: #ffffff;
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
@@ -49,7 +52,7 @@
   font-style: normal;
   font-optical-sizing: auto;
   text-align: start;
-  color: #000;
+  color: #a3a3a3;
   margin-bottom: 15px;
   line-height: 1.4;
 }
@@ -57,7 +60,7 @@
 .Project1 a,
 .Project2 a,
 .Project3 a {
-  color: #a7a7a7;
+  color: #686868;
   text-decoration: none;
   transition: color 0.3s ease, border-bottom 0s ease;
 }
@@ -68,83 +71,24 @@
   color: #000000;
 }
 
-.SuccessAlert {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #505050;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-  animation: alertAppear 7.5s ease-in-out forwards;
-}
+
 
 .ProjectsSection span {
-  color: #a7a7a7;
+  color: #686868;
   font-size: 0.7rem;
 }
 
 .ProjectsTitle h1 {
-  font-size: 3.5rem;
-  color: #000;
-  font-family: "Road Rage", sans-serif;
+  font-size: 3.2rem;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  margin-right: 5px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ProjectsTitle {
-  border-right: 2px solid #000000;
-  padding-right: 10px;
-  margin-right: 10px;
+  padding-bottom: 10px;
 }
 
-
-
-
-
-
-
-.ProjectsAlertBox {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #505050;
-  color: #fff;
-  padding: 16px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  font-size: 0.9rem;
-  font-family: "Outfit", sans-serif;
-  max-width: 300px;
-  z-index: 1000;
-  animation: fadeIn 0.5s ease forwards;
-}
-
-.close-btn {
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: #ff4d4d;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

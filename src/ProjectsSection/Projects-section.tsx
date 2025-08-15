@@ -10,11 +10,11 @@ function Projectsection() {
   }
 
   return (
-    <div className="ProjectsSection relative">
+    <div className="ProjectsContainer relative">
       <div className="ProjectsTitle">
         <h1>PROYECTOS</h1>
       </div>
-
+    <div className="ProjectsSection relative">
       <div className="Project1">
         <h1>Biblioteca Digital </h1>
         <span>• .Net(C#) & AngularJS •</span>
@@ -50,6 +50,7 @@ function Projectsection() {
           Ver mas
         </a>
       </div>
+    </div>
     </div>
   );
 }

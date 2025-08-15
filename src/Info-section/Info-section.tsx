@@ -80,6 +80,24 @@ export default function InfoSection() {
         <AnimatedText tag="h2" index={14}>Nivel de Ingles</AnimatedText>
         <AnimatedText index={15}>A2 Certificado (C1 en proceso...)</AnimatedText>
       </div>
+
+      <div className="JobExperience">
+        <AnimatedText tag="h2" index={16}>Johan Sebastian Giraldo Cañas</AnimatedText>
+        <AnimatedText index={17}><span>Email: </span>Agiraldojohan@gmail.com</AnimatedText>
+        <AnimatedText index={18}><span>Celular: </span>301 666 7319</AnimatedText>
+        <br />
+        <AnimatedText tag="h2" index={19}>Astrid Montoya Perez</AnimatedText>
+        <AnimatedText index={20}><span>Email: </span>Astrid_m_p@gmail.com</AnimatedText>
+        <AnimatedText index={21}><span>Celular: </span>312 841 0531</AnimatedText>
+        <br />
+        <AnimatedText tag="h2" index={22}>Andrés Castrillon Monsalve</AnimatedText>
+        <AnimatedText index={23}><span>Email: </span>andrescastrillonmonsalve@gmail.com</AnimatedText>
+        <AnimatedText index={24}><span>Celular: </span>317 562 9874</AnimatedText>
+      </div>
+
+      <div className="JobExperience2">
+        <AnimatedText tag="h1" index={11}>Referencias</AnimatedText>
+      </div>
     </div>
   );
 }

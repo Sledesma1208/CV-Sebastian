@@ -79,7 +79,7 @@ export default function Perfiltecnico() {
           viewBox="0 0 400 300"
           width="400"
           height="300"
-          style={{ "--dur": "4s" } as React.CSSProperties}
+          style={{ "--dur": "2s" } as React.CSSProperties}
         >
           <style>
             {`
@@ -130,7 +130,7 @@ export default function Perfiltecnico() {
           <circle className="draw-path p1" cx="120" cy="80" r="28" />
           <path
             className="draw-path p2"
-            d="M120 108 q12 8 28 8 h36 q10 0 18 -6"
+            d="M120 108 q12 8 28 8 h36 q10 0 18 0"
           />
           <path
             className="draw-path long p3"

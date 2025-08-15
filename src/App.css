@@ -7,6 +7,41 @@
   margin: 0;
 }
 
+.Contacts {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+.Icons i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+.email {
+  background-color: #d93025;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.github {
+  background-color: #333333;
+}
+
 /* ------------------------Presentation Section--------------------------- */
 
 .PresentationCard {
@@ -65,76 +100,10 @@
 
 /* ---------------------------- Info Section ----------------------------- */
 
-td {
-        font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-th {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 8px;
-  
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-}
-
-a::after {
-  content: "";
-  position: absolute;
-  left: 0%;
-  bottom: -5px;
-  width: 100%;
-  height: 2px;
-  background-color: #a3a3a3;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.2s ease-out;
-}
-
-a:hover {
-  color: #a3a3a3;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-}
-
-table {
-  width: 1000px;
-  color: #ffffff;
-  text-align: center;
-  margin: auto;
-  border-collapse: separate;
-  border-spacing: 20px 10px;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  font-size: 16px;
-  margin-top: 50px;
-}
-
-.FooterContact {
-  width: 100%;
-  height: 260px;
-display: flex;
-  flex-direction: column; /* si quieres los elementos uno debajo del otro */
-  align-items: center;    /* centra horizontal */
-  justify-content: center;
-}
-
 .FooterSection {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
+  height: 50px;
 }
 
-.FooterSection h1{
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-}

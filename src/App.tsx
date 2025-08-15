@@ -37,47 +37,21 @@ function App() {
         <Projectsection />
 
         <div className="FooterSection">
-          <h1>Contacto</h1>
-          <div className="FooterContact">
-            <table>
-              <tr>
-                <th>Email</th>
-                <th>Celular</th>
-                <th>GitHub</th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="mailto:sebastianledesmamontoya12@gmail.com?subject=Consulta&body=Hola%20Sebastian,%20estamos%20interesados%20en%20conocer%20más%20sobre%20tu%20perfil%20profesional."
-                    target="_blank"
-                  >
-                    sebastianledesmamontoya12@gmail.com
-                  </a>
-                </td>
-                <td>
-                  <a
-                    href="https://wa.me/573016358391?text=Hola%20Sebastián,%20estamos%20interesados%20en%20conocer%20más%20sobre%20tu%20perfil%20profesional."
-                    target="_blank"
-                  >
-                    +57 301 635 8391
-                  </a>
-                </td>
-                <td>
-                  <a href="https://github.com/Sledesma1208">@Sledesma1208</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="mailto:sledesmam@gmail.com?subject=Consulta&body=Hola%20Sebastian,%20estamos%20interesados%20en%20conocer%20más%20sobre%20tu%20perfil%20profesional.">
-                    sledesmam@gmail.com
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </div>
+          
         </div>
       </div>
       <footer className="Footer">
+        <div className="Contacts">
+          <div onClick={() => window.location.href = 'mailto:sebastianledesmamontoya12@gmail.com?subject=Consulta&body=Hola%20Sebastian,%20estamos%20interesados%20en%20conocer%20más%20sobre%20tu%20perfil%20profesional.'} className="Icons email">
+            <i className="fa-regular fa-envelope"></i>
+          </div>
+          <div onClick={() => window.location.href = 'https://wa.me/573016358391?text=Hola%20Sebastián,%20estamos%20interesados%20en%20conocer%20más%20sobre%20tu%20perfil%20profesional.'} className="Icons whatsapp">
+            <i className="fa-brands fa-whatsapp"></i>
+          </div>
+          <div onClick={() => window.location.href = 'https://github.com/Sledesma1208'} className="Icons github">
+            <i className="fa-brands fa-github"></i>
+          </div>
+        </div>
         <p>Developed in React by Sebastian</p>
       </footer>
     </>
